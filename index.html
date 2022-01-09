@@ -4,22 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="reset.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <title>dough co.</title>
 </head>
 <body>
     <div class="container">
         <nav class="top-bar">
             <div class="logo-wrapper">
-                <img src="" alt="" class="logo">
+                <a href="/index.html"><img src="images/logo.svg" alt="dough co. logo" class="logo" width="107" height="23 "></a>
             </div>
             <ul class="nav-list">
-                <li class="nav-item"><a href="#!" class="nav-link"></a></li>
-                <li class="nav-item"><a href="#!" class="nav-link"></a></li>
-                <li class="nav-item"><a href="#!" class="nav-link"></a></li>
-                <li class="nav-item"><a href="#!" class="nav-link"></a></li>
-                <li class="nav-item"><a href="#!" class="nav-link"></a></li>
+                <li class="nav-item">
+                    <a href="#!" class="nav-link">
+                        Doughtnuts
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#!" class="nav-link">
+                        Locations
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#!" class="nav-link">
+                        Careers
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#!" class="nav-link">
+                        Team
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#!" class="button button--outline nav-link">
+                        Order Now
+                    </a>
+                </li>
             </ul>
         </nav>
+        <main class="main">
+            <ul class="thumbnails">
+                <li class="thumbnail thumbnail--active"><img src="images/doughnut-1.png" width="40" height="40" alt="doughnut with sprinkles" class="thumbnail__image"></li>
+                <li class="thumbnail"><img src="images/doughnut-2.png" width="40" height="40" alt="pink doughnut" class="thumbnail__image"></li>
+                <li class="thumbnail"><img src="images/doughnut-3.png" width="40" height="40" alt="red velvet doughnut" class="thumbnail__image"></li>
+            </ul>
+            <div class="image-wrapper"><img src="images/doughnut-1.png" width="500" height="500" alt="doughnut with sprinkles" class="image-full"></div>
+            <div class="content">
+                <h1 class="title">Strawberry Iced
+                    With Sprinkles</h1>
+                <p class="text">Our glazed doughnut is dipped in strawberry icing and topped with festive rainbow sprinkles.</p>
+                <ul class="specs">
+                    <li>
+                        <p class="label">Calories</p>
+                        <p class="detail">210</p>
+                    </li>
+                    <li>
+                        <p class="label">Sugar</p>
+                        <p class="detail">11g</p>
+                    </li>
+                    <li>
+                        <p class="label">Total Fat</p>
+                        <p class="detail">5g</p>
+                    </li>
+                    <li>
+                        <p class="label">Sodium</p>
+                        <p class="detail">85mg</p>
+                    </li>
+                </ul>
+                <form action="" class="form">
+                    <input type="number" name="number" id="number">
+                    <input class="button" type="submit" value="Add To Cart">
+                </form>
+            </div>
+        </main>
+    </div>
+    <div class="background-text">
+        <span>Strawberry</span>
     </div>
 </body>
 </html>

@@ -1,0 +1,121 @@
+:root {
+    --pink: #FE707B
+}
+body {
+    background-image: linear-gradient(#FBE5E1, #FDF4F2);
+    background-repeat: no-repeat;
+    font-family: 'DM Sans', sans-serif;
+}
+.container {
+    max-width: 1360px;
+    margin: 0 auto;
+}
+.top-bar {
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+.nav-list {
+    display: flex;
+    list-style-type: none;
+}
+.nav-item {
+    margin-right: 40px;
+}
+.nav-item:last-child {
+    margin-right: 0;
+}
+.nav-link {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color .2s ease;
+}
+.nav-link:hover {
+    color:  var(--pink);
+}
+.button {
+    border-radius: 10px;
+    font-size: 14px;
+    padding-top: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 16px;
+}
+.button--outline {
+    border: 1px solid  var(--pink);
+    color:  var(--pink);
+    transition: background-color .2s ease;
+}
+.button--outline:hover {
+    background-color: #FBE5E1;
+}
+.background-text {
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+}
+.background-text span {
+    font-size: 22vw;
+    left: -5vw;
+    bottom: -10vw;
+    position: relative;
+    color:  var(--pink);
+    opacity: 5%;
+}
+.main {
+    display: flex;
+    align-items: center;
+
+}
+.thumbnails {
+    list-style-type: none;
+    margin-right: 20px;
+
+}
+.thumbnail {
+    background-color: white;
+    border-radius: 70%;
+    margin-bottom: 30px;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+
+}
+.thumbnail--active {
+    border: 2px solid  var(--pink);
+}
+.title {
+    color:  var(--pink);
+    font-weight: 400;
+    font-size: 56px;
+    letter-spacing: 2.8px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.text {
+    margin-bottom: 20px;
+}
+.image-wrapper {
+    margin-right: 40px;
+}
+.specs {
+    display: flex;
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+.specs li {
+   margin-right: 60px;
+}
+.label {
+    margin-bottom: 10px;
+}
+input[type="submit"] {
+    border: none;
+    background-color:  var(--pink);
+    color: white;
+}
