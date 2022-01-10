@@ -5,6 +5,7 @@ body {
     background-image: linear-gradient(#FBE5E1, #FDF4F2);
     background-repeat: no-repeat;
     font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
 }
 .container {
     max-width: 1360px;
@@ -114,8 +115,42 @@ body {
 .label {
     margin-bottom: 10px;
 }
+.form {
+    display: flex;
+}
 input[type="submit"] {
     border: none;
     background-color:  var(--pink);
     color: white;
+    flex-basis: 100%;
+}
+
+.number {
+    background-color: white;
+    color: var(--pink);
+    border-radius: 10px;
+    padding: 15px 10px;
+    display: flex;
+    margin-right: 30px;
+}
+.number__count::-webkit-outer-spin-button,
+.number__count::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+.number__count {
+    width: 50px;
+    text-align: center;
+    border: none;
+    color: var(--pink);
+}
+.number__control {
+    border: none;
+    background-color: transparent;
+    color: var(--pink);
 }
